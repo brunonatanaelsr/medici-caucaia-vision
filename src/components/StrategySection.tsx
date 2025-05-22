@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -270,10 +271,10 @@ const StrategySection = () => {
               <div className="relative py-8">
                 <div className="absolute h-1 bg-gray-200 top-16 left-0 right-0 z-0"></div>
                 <div className="relative z-10 flex justify-between">
-                  {['Awarness', 'Consideração', 'Decisão', 'Experiência', 'Fidelização'].map((stage, index) => (
+                  {["Awarness", "Consideração", "Decisão", "Experiência", "Fidelização"].map((stage, index) => (
                     <div key={index} className="flex flex-col items-center w-1/5">
                       <div className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                        index <= 2 ? 'bg-medici-teal text-white' : 'bg-gray-200 text-gray-500'
+                        index <= 2 ? "bg-medici-teal text-white" : "bg-gray-200 text-gray-500"
                       }`}>
                         {index + 1}
                       </div>
@@ -404,7 +405,7 @@ const StrategySection = () => {
                     </p>
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-gray-700">Rotatividade médica</span>
-                      <span className="text-green-600 font-bold">< 10%/ano</span>
+                      <span className="text-green-600 font-bold">{"< 10%/ano"}</span>
                     </div>
                     <div className="h-2 w-full bg-gray-100 rounded-full">
                       <div className="h-2 bg-green-500 rounded-full" style={{ width: '80%' }}></div>
