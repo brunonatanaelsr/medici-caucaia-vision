@@ -80,6 +80,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
           <p>© {new Date().getFullYear()} Clínica Médica Medici. Todos os direitos reservados.</p>
+          <p className="mt-2 text-gray-300">Desenvolvido por Bruno Natanael</p>
         </div>
       </div>
     </footer>

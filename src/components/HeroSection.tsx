@@ -18,7 +18,7 @@ const HeroSection = () => {
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Medici Caucaia — Diagnóstico completo em <span className="text-medici-coral">90 min</span>
+            Medici Caucaia — Diagnóstico completo
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light text-gray-200">
             Mercado pronto, proposta inovadora, retorno sustentável.
@@ -34,7 +34,7 @@ const HeroSection = () => {
             <Button
               onClick={() => window.location.href = "#roadmap"}
               variant="outline"
-              className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full"
+              className="border-white text-white bg-medici-coral hover:bg-medici-coral/80 px-8 py-6 text-lg rounded-full"
               size="lg"
             >
               Explorar Roadmap
