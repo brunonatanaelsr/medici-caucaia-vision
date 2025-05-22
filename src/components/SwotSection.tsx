@@ -134,6 +134,14 @@ const SwotSection = () => {
     setActiveCategory(activeCategory === category ? null : category);
   };
 
+  // Translated category names in Portuguese
+  const categoryNames = {
+    strengths: "Forças",
+    weaknesses: "Fraquezas",
+    opportunities: "Oportunidades",
+    threats: "Ameaças"
+  };
+
   return (
     <section id="swot" className="py-20">
       <div className="container mx-auto px-4">
@@ -156,7 +164,7 @@ const SwotSection = () => {
               onClick={() => handleCategoryClick(category)}
             >
               <h3 className={`text-2xl font-bold mb-4 flex items-center ${categoryColors[category as keyof typeof categoryColors].text}`}>
-                {category.charAt(0).toUpperCase() + category.slice(1)}
+                {categoryNames[category as keyof typeof categoryNames]}
                 {activeCategory === category && (
                   <span className="ml-2 text-sm bg-white rounded-full px-3 py-1">
                     Clique para detalhes
